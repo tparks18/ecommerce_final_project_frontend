@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  background: green;
+  background: white;
   font-family: "Arimo", sans-serif;
 }
 
@@ -13,10 +13,16 @@ body {
   width: 71.875em;
 }
 
+.navbar-item-logo img {
+  position: relative;
+  width: 75px;
+}
+
 .myNavbar {
   background-color:white;
   padding: 0.6rem;
   border-radius: 0.22rem;
+  overflow: hidden;
 }
 
 .navbar_container {
@@ -54,3 +60,60 @@ body {
   margin-top: 1rem;
   border-radius: 0.22rem;
 } */
+
+/* Dropdown Button */
+.dropbtn {
+  font-size: 16px;
+  border: none;
+  background-color: white;
+  color: #606060;
+  font-weight: bold;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: static;
+  display: inline-block;
+  overflow: hidden;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 130px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.menu-icon:hover {
+  color:#57b650;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+/* .dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+} */
+
+.navbar-break-line {
+  z-index: 0;
+}
