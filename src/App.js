@@ -1,5 +1,9 @@
 import React, { Component } from "react";
-import Cart from "./views/Cart";
+import './App.css';
+import { Route, Switch } from "react-router-dom";
+
+import Navbar from "./components/Navbar";
+import Shop from "./views/Shop";
 import Contact from "./views/Contact";
 import Home from "./views/Home";
 
@@ -17,9 +21,17 @@ export default class App extends Component {
     console.log("component rendered");
     return (
       <div>
-        <Home />
-        <Contact />
-        <Cart />
+        <header>
+          <Navbar />
+        </header>
+        <main className="container">
+          <Switch>
+            <Route exact path='/' render={() => <Home />} />
+            <Route exact path='/contact' render={() => <Contact />} />
+            <Route exact path='/shop' render={() => <Shop />} />
+          </Switch>
+        </main>
+        <footer></footer>
       </div>
     );
   }
