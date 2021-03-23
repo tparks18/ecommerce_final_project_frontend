@@ -27,19 +27,11 @@ export default class Navbar extends Component {
                   Buy Local Food
                 </button>
                 <div class="dropdown-content">
-                  <a href="/">Products</a>
+                  <Link to="Shop">Products</Link>
                   <a href="/">Cart</a>
                   <a href="/">Checkout</a>
                 </div>
               </div>
-              {/* <li className="navbar-item-content">
-                <Link to="localfood">
-                  <span className="menu-icon">
-                    <i className="fa fa-carrot fa-2x" />
-                  </span>
-                  Buy Local Food
-                </Link>
-              </li> */}
               <li className="navbar-item-content">
                 <Link to="recipes">
                   <span className="menu-icon">
