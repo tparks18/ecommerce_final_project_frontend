@@ -53,7 +53,7 @@ export default class App extends Component {
                 />
               )}
             />
-            <Route exact path="/shop/cart" render={() => <ShopCart />} />
+            <Route exact path="/shop/cart" render={() => <ShopCart cart={this.state.cart}/>} />
           </Switch>
         </main>
         <footer></footer>
