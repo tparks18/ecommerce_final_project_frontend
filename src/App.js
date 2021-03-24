@@ -11,25 +11,47 @@ import Shop from "./views/Shop"
 export default class App extends Component {
   constructor() {
     super();
-    console.log("component constructed");
+
+    this.state = {
+      products: [],
+      cart: [],
+    };
   }
 
   componentDidMount() {
-    console.log("component mounted");
+    fetch("http://localhost:5000/api/shop")
+      .then((res) => res.json())
+      .then((data) =>
+        this.setState({
+          products: data,
+        })
+      );
   }
+
+  addToCart = (product) => this.setState({ cart: this.state.cart.concat(product) });
 
   render() {
     console.log("component rendered");
+
     return (
       <div>
         <header>
-          <Navbar />
+          <Navbar cart={this.state.cart} />
         </header>
         <main className="container">
           <Switch>
             <Route exact path="/" render={() => <Home />} />
             <Route exact path="/contact" render={() => <Contact />} />
-            <Route exact path="/shop" render={() => <Shop />} />
+            <Route
+              exact
+              path="/shop"
+              render={() => (
+                <Shop
+                  addToCart={this.addToCart}
+                  products={this.state.products}
+                />
+              )}
+            />
           </Switch>
         </main>
         <footer></footer>

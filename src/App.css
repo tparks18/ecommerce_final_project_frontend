@@ -101,7 +101,7 @@ body {
 
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
-  background-color: #ddd;
+  background-color: #57b650;
 }
 
 /* Show the dropdown menu on hover */
@@ -120,4 +120,12 @@ body {
 
 .navbar-break-line {
   z-index: 0;
+}
+
+.add-to-cart-icon {
+  padding-left: 10px;
+}
+
+.card-text {
+    height: 47.273px;
 }

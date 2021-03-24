@@ -1,6 +1,8 @@
 import React, { Component } from "react";
+import { FiShoppingCart } from "react-icons/fi";
 
 export default class Product extends Component {
+    
   render() {
       const product = this.props.info;
     return (
@@ -18,10 +20,17 @@ export default class Product extends Component {
             alt="{product.name}"
           />
           <div className="card-body">
-            <h4 className="card-title">Title</h4>
-            <p className="card-text">Text</p>
+            <p className="card-text">{product.description}</p>
             <div className="card-footer">
-              <button className="btn btn-success btn-block">Add to Cart</button>
+              <button
+                onClick={() => this.props.addToCart(product)}
+                className="btn btn-success btn-block"
+              >
+                Add to Cart
+                <span className="add-to-cart-icon">
+                  <FiShoppingCart />
+                </span>
+              </button>
             </div>
           </div>
         </div>

@@ -28,7 +28,14 @@ export default class Navbar extends Component {
                 </button>
                 <div class="dropdown-content">
                   <Link to="Shop">Products</Link>
-                  <a href="/">Cart</a>
+                  <a href="/">
+                    <span className="float-right">
+                      <span className="badge badge-pill badge-warning">
+                        {this.props.cart.length}
+                      </span>
+                    </span>
+                    Cart
+                  </a>
                   <a href="/">Checkout</a>
                 </div>
               </div>
