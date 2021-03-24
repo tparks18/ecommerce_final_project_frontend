@@ -129,3 +129,11 @@ body {
 .card-text {
     height: 47.273px;
 }
+
+.product {
+  margin-bottom: 25px;
+}
+
+.standardized {
+  padding-left: 0px;
+}

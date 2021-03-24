@@ -12,21 +12,21 @@ export default class Navbar extends Component {
               <li className="navbar-item-content-first">
                 <Link to="/">
                   <div className="navbar-item-content">
-                    <span class="menu-icon">
-                      <i class="fa fa-home fa-2x"></i>
+                    <span className="menu-icon">
+                      <i className="fa fa-home fa-2x"></i>
                     </span>
                     Home
                   </div>
                 </Link>
               </li>
-              <div class="dropdown">
-                <button class="dropbtn">
+              <div className="dropdown">
+                <button className="dropbtn">
                   <span className="menu-icon">
                     <i className="fa fa-carrot fa-2x" />
                   </span>
                   Buy Local Food
                 </button>
-                <div class="dropdown-content">
+                <div className="dropdown-content">
                   <Link to="Shop">Products</Link>
                   <a href="/">
                     <span className="float-right">
@@ -36,7 +36,7 @@ export default class Navbar extends Component {
                     </span>
                     Cart
                   </a>
-                  <a href="/">Checkout</a>
+                  <Link to="/shop/cart">Checkout</Link>
                 </div>
               </div>
               <li className="navbar-item-content">

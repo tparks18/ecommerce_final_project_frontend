@@ -7,6 +7,7 @@ import Navbar from "./components/Navbar";
 import Contact from "./views/Contact";
 import Home from "./views/Home";
 import Shop from "./views/Shop"
+import ShopCart from "./views/ShopCart";
 
 export default class App extends Component {
   constructor() {
@@ -52,6 +53,7 @@ export default class App extends Component {
                 />
               )}
             />
+            <Route exact path="/shop/cart" render={() => <ShopCart />} />
           </Switch>
         </main>
         <footer></footer>
