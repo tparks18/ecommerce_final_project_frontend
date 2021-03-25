@@ -1,11 +1,15 @@
-import React, { Component } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import logo from "./rootin4uslogo.png"
 
-export default class Navbar extends Component {
-  render() {
+export const Navbar = (props) => {
     return (
       <>
+        <div className="green-bar">
+          <strong>
+            *Ensuring better livelihoods for farmers and artisans*
+          </strong>
+        </div>
         <div className="header-container">
           <nav className="myNavbar">
             <ul className="navbar_container">
@@ -31,7 +35,7 @@ export default class Navbar extends Component {
                   <a href="/">
                     <span className="float-right">
                       <span className="badge badge-pill badge-warning">
-                        {this.props.cart.length}
+                        {props.numItems}
                       </span>
                     </span>
                     Cart
@@ -40,7 +44,7 @@ export default class Navbar extends Component {
                 </div>
               </div>
               <li className="navbar-item-content">
-                <Link to="recipes">
+                <Link to="Recipes">
                   <span className="menu-icon">
                     <i className="fa fa-scroll fa-2x" />
                   </span>
@@ -84,6 +88,6 @@ export default class Navbar extends Component {
       </>
     );
   }
-}
+
 
 
