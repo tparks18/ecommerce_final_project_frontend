@@ -71,11 +71,11 @@ export const Navbar = (props) => {
                 </Link>
               </li>
               <li className="navbar-item-content">
-                <Link to="sellerlogin">
+                <Link to="Sources">
                   <span className="menu-icon">
-                    <i className="fas fa-store fa-2x" />
+                    <i class="fas fa-seedling fa-2x"></i>
                   </span>
-                  Seller Login
+                  Sources
                 </Link>
               </li>
             </ul>

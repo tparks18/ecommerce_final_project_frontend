@@ -8,6 +8,7 @@ import Home from "./views/Home";
 import {Shop }from "./views/Shop"
 import {ShopCart} from "./views/ShopCart";
 import Recipes from "./views/Recipes";
+import Sources from "./views/Sources";
 
 export const App = () => {
   const [products, setProducts] = useState([]);
@@ -168,6 +169,7 @@ export const App = () => {
                 />
               )}
             />
+            <Route exact path="/Sources" render={() => <Sources />} />
           </Switch>
         </main>
         <footer></footer>
