@@ -63,11 +63,11 @@ export const Navbar = (props) => {
                 </Link>
               </li>
               <li className="navbar-item-content">
-                <Link to="reviews">
+                <Link to="Contact">
                   <span className="menu-icon">
-                    <i className="fas fa-thumbs-up fa-2x" />
+                    <i class="fas fa-envelope-open-text fa-2x" />
                   </span>
-                  Reviews
+                  Contact Us
                 </Link>
               </li>
               <li className="navbar-item-content">

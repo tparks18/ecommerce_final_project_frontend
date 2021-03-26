@@ -17,7 +17,7 @@ export const App = () => {
   const [taxTotal, setTaxTotal] = useState(0);
   const [grandTotal, setGrandTotal] = useState(0);
 
-  // Pulls in products from Flask API
+ 
   useEffect(() => {
       async function getProducts() {
           await fetch('http://localhost:5000/api/shop')
@@ -97,9 +97,9 @@ export const App = () => {
     let tt = taxTotal;
     let gt = grandTotal;
 
-    // currently, the data structure coming into handleQuantityChange is the simplified, display version of my cart
+  
     let itemToChange;
-    // I want to use addToCart IF the input value's quantity is greater than the value 'p' coming into the cart.
+
     if (e.target.value > p.quantity) {
       for (const item of products) {
         if (p.product.id === item.id) {
@@ -138,25 +138,6 @@ export const App = () => {
 
 
   };
-
-  //  const handleCheckout = (p) => {
-  //    //once the checkout button is pressed i want it to delete all the items in the cart
-  //    //then have it send a message that the checkout was successful
-  //    let newCart = { ...cart };
-  //    let newNumItems = numItems;
-
-  //    // console.log(newCart.items[15].quantity)
-  //    if (newCart.items[p.product.id].quantity > 1) {
-  //      newCart.items[p.product.id].quantity--;
-  //      newNumItems--;
-  //    } else {
-  //      delete newCart.items[p.product.id];
-  //      newNumItems--;
-  //    }
-
-  //    setDisplayCart(newCart);
-  //    setNumItems(newNumItems);
-  //  };
 
     return (
       <div>
