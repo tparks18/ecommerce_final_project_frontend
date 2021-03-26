@@ -23,32 +23,30 @@ export const Navbar = (props) => {
                   </div>
                 </Link>
               </li>
-              <div className="dropdown">
-                <button className="dropbtn">
+              <li className="navbar-item-content">
+                <Link to="Shop">
                   <span className="menu-icon">
                     <i className="fa fa-carrot fa-2x" />
                   </span>
                   Buy Local Food
-                </button>
-                <div className="dropdown-content">
+                </Link>
+                {/* <div className="dropdown-content">
                   <Link to="Shop">Products</Link>
-                  <a href="/">
+                  <a href="/">Cart</a>
+                  <Link to="/shop/cart">Checkout</Link>
+                </div> */}
+              </li>
+              <li className="navbar-item-content">
+                <Link to="/shop/cart">
+                  <span className="menu-icon">
+                    <i class="fas fa-shopping-cart fa-2x" />
                     <span className="float-right">
-                      <span className="badge badge-pill badge-warning">
+                      <span className="badge badge-pill badge-info">
                         {props.numItems}
                       </span>
                     </span>
-                    Cart
-                  </a>
-                  <Link to="/shop/cart">Checkout</Link>
-                </div>
-              </div>
-              <li className="navbar-item-content">
-                <Link to="Recipes">
-                  <span className="menu-icon">
-                    <i className="fa fa-scroll fa-2x" />
                   </span>
-                  Recipes
+                  Cart
                 </Link>
               </li>
               <li className="navbar-item-logo">
@@ -57,19 +55,19 @@ export const Navbar = (props) => {
                 </span>
               </li>
               <li className="navbar-item-content">
+                <Link to="Recipes">
+                  <span className="menu-icon">
+                    <i className="fa fa-scroll fa-2x" />
+                  </span>
+                  Recipes
+                </Link>
+              </li>
+              <li className="navbar-item-content">
                 <Link to="reviews">
                   <span className="menu-icon">
                     <i className="fas fa-thumbs-up fa-2x" />
                   </span>
                   Reviews
-                </Link>
-              </li>
-              <li className="navbar-item-content">
-                <Link to="customerlogin">
-                  <span className="menu-icon">
-                    <i className="fas fa-sign-in-alt fa-2x" />
-                  </span>
-                  Customer Login
                 </Link>
               </li>
               <li className="navbar-item-content">

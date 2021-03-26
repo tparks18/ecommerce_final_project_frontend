@@ -1,5 +1,10 @@
 import React from "react";
 import { CartList } from "../../components/CartList";
+import { loadStripe } from "@stripe/stripe-js";
+
+// const stripePromise = loadStripe(
+//   "pk_test_51IQxLfEWzwZKboVgvG1RE9cTt2frOYMES9IybMfz3925OehXfUS6kDQdhrxnGs5qHUVaO590x1TYa8nPFY7HHVpZ00cj56gFyj"
+// );
 
 export const ShopCart = (props) => {
   return (
