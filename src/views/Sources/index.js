@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import mword from "./Microsoft_Word_window.png";
 
 export default class Sources extends Component {
     render() {

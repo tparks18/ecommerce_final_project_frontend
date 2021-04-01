@@ -14,8 +14,8 @@ export const Product = (props) => {
         </div>
         <img
           className="card-img-top"
-          src="https://placehold.it/500x500&text=Product Image"
-          alt="{product.name}"
+          src="https://placehold.it/500x500&text=Product"
+          alt={product.name}
         />
         <div className="card-body">
           <p className="card-text">{product.description}</p>
@@ -35,6 +35,3 @@ export const Product = (props) => {
     </div>
   );
 };
-
-
-
