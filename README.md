@@ -5,4 +5,4 @@ https://github.com/tparks18/ecommerce_final_project_backend_2
 
 An ecommerce site designed to sell produce for a small business
 
-![](react_app_demo.gif)
+![](react-app-giphy.gif)
